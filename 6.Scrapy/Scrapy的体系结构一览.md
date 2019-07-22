@@ -26,7 +26,7 @@ Scrapy的数据流是由执行引擎控制的，具体流程如上图的红圈�
 ```
 Scrapy Engine：爬虫引擎，负责控制数据在系统中所有部件之间的流动，当某些行为发生时，负责触发对应的事件。
 
-Scheduler：调试器，从Engine接收请求，把请求放入队列，当Engine索要请求时，把请求出队给Engine。
+Scheduler：调度器，从Engine接收请求，把请求放入队列，当Engine索要请求时，把请求出队给Engine。
 
 Downloader：下载器，负责提取网页，并返回给Engine，然后由Engine发送给Spider。
 
